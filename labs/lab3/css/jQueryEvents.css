@@ -1,0 +1,51 @@
+body{
+    background-color: white;
+}
+@font-face {
+    font-family: Harry P;
+    src: url(/HarryP.TTF);
+    }
+h1{
+    color: black;
+    text-align-last: center;
+    font-family: 'Harry P', 'Times New Roman', Times, serif;
+}
+
+.cover_img{
+	display: grid;
+	height: 100%;
+	position: relative;
+}
+
+.cover_img .btn {
+	position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	background-color: transparent;
+    color:black;
+    font-size: 3em;
+    padding: 12px 36px;
+    border: none;
+    cursor: pointer;
+	margin: auto;
+	font-weight: 900;
+    font-family: 'Harry P', 'Times New Roman', Times, serif;
+
+}
+
+.img_fit{
+max-width: 100%;
+  max-height: 100vh;
+  margin: auto;
+}
+
+img{
+    width: 25%;
+    height: auto;
+}
+
+path{
+    fill: transparent;
+}
