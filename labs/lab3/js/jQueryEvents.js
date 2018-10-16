@@ -6,6 +6,9 @@ function fnmouseenter() {
 function fnmouseleave() {
   $("#text").css("color", "black");
 }
+$("button").click(function(){
+  $("div").animate({left: '250px'});
+});
 
 $(document).ready(function(){
   $("#text").hover(fnmouseenter, fnmouseleave);

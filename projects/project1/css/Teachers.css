@@ -32,15 +32,30 @@
     border:none;
     text-decoration:none;
     text-transform:uppercase;
-    background:#FFFFFF;
+    background-color: transparent;
     color:#333333;
     font-family: 'Alegreya Sans SC',sans-serif;
     font-size: 1.5em;
-    box-sizing:border-box;
-    margin-top:5%;
-    margin-left:75%;
+    border-radius: 15px;
+    margin-top:0%;
+    margin-left:50%;
     margin-right: 50%;
     padding:10px 40px;
+
+  }
+
+  #protestButton{
+    -webkit-filter: drop-shadow( -10px -10px 1px #000 );
+            filter: drop-shadow( 4px 4px 1px #000 );
+    filter: invert(100%) sepia(100%) grayscale(100%);
+    position: relative;
+    top:-400px;
+  }
+
+  #protestButton:hover{
+    cursor: pointer;
+    -webkit-filter: invert(40%) grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(400%) contrast(2);
+    filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
   }
 
   .anim-trans {
@@ -84,24 +99,63 @@ header{
 
 #blocks{
 	/*align-content: center;*/
-	margin: auto;
+    margin-left: 20%;
+    margin-right: 0%;
+    margin-top: 0%;
+    margin-bottom: 0%;
 	width: 90%;
-	height: 250px;
-	max-width: 1080px;
 	text-align: center;
 	display: flex;
-    justify-content: center;
-    padding: 20px;
+    flex-direction: column;
+    bottom: 20px;
 }
 
 #why{
-	width: 300px;
-	/*height: 200px;*/
+	width:100px;
+	height: auto;
 	text-align: center;
 	background-color: #FFFFFF;
 	border-radius: 10px;
 	padding: 90px 20px;
-	margin: 20px;
+    margin-bottom: 20px;
+    border: #ffffff solid 2px;
+    bottom: 20px;
+    cursor: pointer;
+}
+#what{
+	width: 75px;
+	height: auto;
+	text-align: center;
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	padding: 90px 20px;
+    border: #FFFFFF solid 2px;
+    cursor: pointer;
+}
+#NatBlock{
+    display: none;
+    height: auto;
+}
+
+#NatAv{
+    width:250px;
+	height: auto;
+	text-align: center;
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	padding: 90px 20px;
+    margin-bottom: 20px;
+    border: #ffffff solid 2px;
+    cursor: pointer;
+    margin-left: 20%;
+    margin-right: 0%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    display: flex;
+    position: relative;
+    top:50px;
+    right: 410px;
+
 }
 
 p{
@@ -127,9 +181,9 @@ h4, h5{
 	width: 80%;
 	max-width: 880px;
     align-content: center;
-    margin-top: 50px;
+    margin-top: -130px;
 	margin-left: auto;
-	margin-right: auto;
+
 }
 #us-map{
     display: block;
@@ -143,7 +197,7 @@ h4, h5{
             filter: drop-shadow( 4px 4px 1px #000 );
   }
   path:hover, circle:hover {
-    stroke: #002868 !important;
+    stroke: #FFFFFF !important;
     stroke-width:2px;
     stroke-linejoin: round;
     fill: #002868 !important;
