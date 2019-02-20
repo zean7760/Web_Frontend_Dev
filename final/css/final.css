@@ -1,0 +1,154 @@
+body {
+	background-color: blanchedalmond;
+	font-size:1.4em;
+    color: #333;
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: auto;
+    width: 50%;
+}
+
+fieldset {
+    text-align: center;
+}
+
+.content{
+	text-align: center;
+	margin: auto;
+}
+
+ .history{
+    display: none;
+ }
+
+.history_button{
+    margin: auto;
+    width: 25%;
+}
+
+.name_heading{
+	font-weight: bold;
+	margin-left: 2%;
+	width: 15%;
+	float: left;
+}
+
+.phone_heading{
+	font-weight: bold;
+	margin-left: 2%;
+	width: 15%;
+	float: left;
+}
+
+.email_heading{
+	font-weight: bold;
+	margin-left: 2%;
+	width: 15%;
+	float: left;
+}
+
+.people_heading{
+	font-weight: bold;
+	margin-left: 2%;
+	width: 10%;
+	float: left;
+}
+.homes_heading{
+	font-weight: bold;
+	margin-left: 2%;
+	width: 10%;
+	float: left;
+}
+
+.location_heading{
+	font-weight: bold;
+	margin-left: 2%;
+	width: 15%;
+	float: left;
+}
+
+.name{
+    width: 20%;
+    float: left;
+    margin-left: 2%;
+}
+
+.email{
+    width: 20%;
+    float: left;
+    margin-left: 2%;
+}
+
+.phone{
+    width: 20%;
+    float: left;
+    margin-left: 2%;
+}
+.caught{
+    width: 20%;
+    float: left;
+    margin-left: 2%;
+}
+.trigger{
+    width: 20%;
+    float: left;
+    margin-left: 2%;
+}
+
+.location{
+    width: 20%;
+    float: left;
+    margin-left: 2%;
+}
+nav{
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+li{
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+#results{
+	text-align: center;
+    margin: auto;
+    display: inline;
+}
+
+.fireName{
+    width: 10%;
+    float: left;
+    margin-left: 2%;
+}
+
+.fireLocation{
+    width: 20%;
+    float: left;
+    margin: 2%;
+}
+
+.fireArea{
+    float: left;
+    margin: 2%;
+}
