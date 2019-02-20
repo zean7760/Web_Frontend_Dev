@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Final</title>
+        <link href="css/final.css" rel="stylesheet" type="text/css" />
+        <script
+		src="https://code.jquery.com/jquery-3.3.1.min.js"
+		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+		crossorigin="anonymous">
+        </script>
+        <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-functions.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+        <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyD8dcf9oRotR8t2d3Pt9kaG4SfkUz7_zQY",
+            authDomain: "fwd-final-4bfa2.firebaseapp.com",
+            databaseURL: "https://fwd-final-4bfa2.firebaseio.com",
+            projectId: "fwd-final-4bfa2",
+            storageBucket: "fwd-final-4bfa2.appspot.com",
+            messagingSenderId: "1058336763639"
+        };
+        firebase.initializeApp(config);
+        </script>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="report.html">Report</a></li>
+            </ul>
+        </nav>
+        <main class="inputInfo">
+            <div>
+                <label for="name" class="label">Name</label>
+                <input name="name" type="text" id="name" size="36" required >
+            </div>
+            <div>
+                <label for="email" class="label">Email</label>
+                <input name="email" type="text" id="email" size="36">
+            </div>
+            <div>
+                <label for="phone" class="label">Phone</label>
+                <input name="phone" type="text" id="phone" size="36">
+            </div>
+            <p>
+                Are people being affected?<br>
+                <input type="radio" name="caught" id="caught_yes" value="Yes">
+                <label for="caught_yes">Yes</label>
+                <br>
+                <input type="radio" name="caught" id="caught_no" value="No">
+                <label for="caught_no">No</label>
+            </p>
+            <p>
+                Are structures being affected?<br>
+                <input type="radio" name="trigger" id="trigger_yes" value="Yes">
+                <label for="trigger_yes">Yes</label>
+                <br>
+                <input type="radio" name="trigger" id="trigger_no" value="No">
+                <label for="trigger_no">No</label>
+            </p>
+            <p>
+                <label for="location" class="label">Location</label>
+                <input name="location" type="text" id="location" size="36">
+            </p>
+
+
+        </main>
+        <input type="submit" value="Submit" id="enter">
+        <div class="content">
+                <button class="history_button">Show History of Fire Reports </button>
+            <span class="history">
+                <h1>Fire Reports</h1>
+                <span class="name_heading">Name</span>
+
+                <span class="phone_heading">Phone </span>
+
+                <span class="email_heading">Email</span>
+
+                <span class="people_heading">People </span>
+
+                <span class="homes_heading">Homes </span>
+
+                <span class="location_heading">Location</span>
+
+                <div id="history"> </div>
+                </div>
+            </span>
+        </div>
+
+    </body>
+    <script src="js/firebase.js" rel=stylesheet type="text/javascript"></script>
+    <script src="js/api.js" rel=stylesheet type="text/javascript"></script>
+</html>
