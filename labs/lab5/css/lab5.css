@@ -1,0 +1,93 @@
+body {
+	background-color: black;
+	font-size:1.4em;
+    color: white;
+    display: inline-block;
+    width: 100%;
+}
+
+main {
+    margin: auto;
+    width: 50%;
+}
+
+fieldset {
+    text-align: center;
+}
+
+.good_things_input{
+    margin: auto;
+    background: #333;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.content{
+
+	text-align: center;
+	margin: auto;
+}
+ .history{
+    display: none;
+ }
+
+.history_button{
+    margin: auto;
+    width: 25%;
+}
+
+.name_heading{
+	font-weight: bold;
+	margin-left: 2%;
+	width: 20%;
+	float: left;
+}
+
+.date_heading{
+	font-weight: bold;
+	margin-left: 2%;
+	width: 20%;
+	float: left;
+}
+
+.mood_heading{
+	font-weight: bold;
+	margin-left: 2%;
+	width: 20%;
+	float: left;
+}
+
+.things_heading{
+	font-weight: bold;
+	margin-left: 2%;
+	width: 20%;
+	float: left;
+}
+
+.name{
+    width: 20%;
+    float: left;
+    margin-left: 2%;
+}
+
+.date{
+    width: 20%;
+    float: left;
+    margin-left: 2%;
+}
+
+.mood{
+    width: 20%;
+    float: left;
+    margin-left: 2%;
+}
+
+.things{
+    width: 20%;
+    float: left;
+    margin-left: 2%;
+}
+
+ul.things{
+    text-align: left;
+}

@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Lab 5</title>
+        <link href="css/lab5.css" rel="stylesheet" type="text/css" />
+        <script
+		src="https://code.jquery.com/jquery-3.3.1.min.js"
+		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+		crossorigin="anonymous">
+        </script>
+            <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-database.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-functions.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+            <script type="text/javascript">
+                // Initialize Firebase
+                var config = {
+                    apiKey: "AIzaSyAQYsVy5CQswcPVgAHp7xKCTW6sk6yaPZQ",
+                    authDomain: "lab5-f078b.firebaseapp.com",
+                    databaseURL: "https://lab5-f078b.firebaseio.com",
+                    projectId: "lab5-f078b",
+                    storageBucket: "",
+                    messagingSenderId: "608530528270"
+                };
+                firebase.initializeApp(config);
+            </script>
+    </head>
+    <body>
+        <main>
+
+         <div class="good_things_input">
+            <div>
+                <label for="name" class="label">Name</label>
+                <input name="name" type="text" id="name" size="36" required >
+            </div>
+            <div>
+                <label for="mood" class="label">Mood</label>
+                <input name="mood" type="text" id="mood" size="36">
+            </div>
+            <div>
+                <label for="date" class="label">Date</label>
+                <input name="date" type="date" id="date" size="36">
+            </div>
+            <fieldset>
+                <legend>Three Good Things That Happened Today</legend>
+                <div>
+                    <label for="thing1" class="label">1.</label>
+                    <input name="thing1" type="text" id="thing1" size="36">
+                </div>
+                <div>
+                    <label for="thing2" class="label">2.</label>
+                    <input name="thing2" type="text" id="thing2" size="36">
+                </div>
+                <div>
+                    <label for="thing3" class="label">3.</label>
+                    <input name="thing3" id="thing3" type="text" size="36">
+                </div>
+            </fieldset>
+            <input type="submit" value="Submit" id="enter">
+        </div>
+        </main>
+        <div class="content">
+            <button class="history_button">Show History of Good Things </button>
+            <span class="history">
+                <h1>History</h1>
+                <span class="name_heading">Name</span>
+
+                <span class="date_heading">Date </span>
+
+                <span class="mood_heading">Mood</span>
+
+                <span class="things_heading">Good Things</span>
+
+                <div id="history"> </div>
+                </div>
+            </span>
+        </div>
+
+    </body>
+    <script src="js/lab5.js" rel=stylesheet type="text/javascript"></script>
+
+</html>
